@@ -5,27 +5,13 @@ TCP Server / Message Application
 * [submission PR](https://github.com/meron-401n14/lab-16/pull/1)
 * [travis](https://www.travis-ci.com/meron-401n14/lab-16)
 
-
-
 #### Documentation
 * [jsdoc](comments only)
-* [styleguide](https://github.com/shri/JSDoc-Style-Guide#functions)
-
 
 ### Modules
-* roles
-* users
-* router
-#### models
-* users
-* roles
-* model
-
-### Setup
-#### `.env` requirements
-* `PORT` - 3000
-* `MONGODB_URI` - URL to the running mongo instance/db
-
+* server
+* logger
+* app
 #### Running the app
 * node app.js ./data/data.text
 * node server.js / nodemon server.js
@@ -36,6 +22,13 @@ TCP Server / Message Application
 
 #### UML
 Link to an image of the UML for your application and response to events
+
+
+
+
+
+
+
 
 
 
