@@ -2,9 +2,9 @@
 TCP Server / Message Application
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [Heroku](https://lab-13app.herokuapp.com/)
+* [submission PR](https://github.com/meron-401n14/lab-16/pull/1)
+* [travis](https://www.travis-ci.com/meron-401n14/lab-16)
+
 
 
 #### Documentation
