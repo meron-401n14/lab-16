@@ -1,7 +1,7 @@
 'use strict';
 
 const net = require('net');
-
+const alterFile = require('../file-changer/app.js');
 const port = process.env.PORT || 3001;
 const server = net.createServer();
 
@@ -12,6 +12,9 @@ let socketPool = {};
 server.on('connection', (socket) => {
   const id = `Socket-${Math.random()}`;
   console.log('Socket connected!');
+  socketPool.forEach(socket => {
+    socket.write(alterFile({event:'file fetched', payload:'message'}));
+  });
   socketPool.push(socket);
   socketPool[id] = socket;
 

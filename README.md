@@ -13,6 +13,8 @@ TCP Server / Message Application
 * logger
 * app
 #### Running the app
+// to run app.js needs to be file-changer/ directory 
+// to run each app needs to be the directory where the .js file exisits 
 * node app.js ./data/data.text
 * node server.js / nodemon server.js
 * node logger.js
