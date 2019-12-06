@@ -2,7 +2,7 @@
 TCP Server / Message Application
 
 ### Links and Resources
-* [submission PR](https://github.com/meron-401n14/lab-16/pull/1)
+* [submission PR](https://github.com/meron-401n14/lab-16/pull/2)
 * [travis](https://www.travis-ci.com/meron-401n14/lab-16)
 
 #### Documentation
