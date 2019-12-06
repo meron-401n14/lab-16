@@ -11,8 +11,13 @@ let socketPool = {};
 
 server.on('connection', (socket) => {
   const id = `Socket-${Math.random()}`;
+  console.log('Socket connected!');
+  socketPool.push(socket);
   socketPool[id] = socket;
+
+
   socket.on('data', (buffer) => dispatchEvent(buffer));
+
   socket.on('close', () => {
     delete socketPool[id];
   });
@@ -21,7 +26,7 @@ server.on('connection', (socket) => {
 let dispatchEvent = (buffer) => {
   let text = buffer.toString().trim();
   for (let socket in socketPool) {
-    socketPool[socket].write(`${event} ${text}`);
+    socketPool[socket].write(`${file} ${text}`);
   }
 };
 
